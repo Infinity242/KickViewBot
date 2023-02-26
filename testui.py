@@ -1,6 +1,7 @@
 from tkinter import *
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
 from threading import Thread
 from time import sleep
 
@@ -15,10 +16,13 @@ class KickBot():
     def doTest(self):
         self.setupWebBrowser()
         self.driver.get(self.url)
-        # Locate the button by its text
-        button = self.driver.find_element(By.XPATH, "//button[contains(text(), 'Start watching')]")
-        # Click the button
-        button.click()
+        try:
+            # Locate the button by its text
+            button = self.driver.find_element(By.XPATH, "//button[contains(text(), 'Start watching')]")
+            # Click the button
+            button.click()
+        except NoSuchElementException:
+            print("Watch now button not found on this page")
         while True:
             sleep(10)
 

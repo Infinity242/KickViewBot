@@ -33,6 +33,7 @@ class App(Frame):
         self.master = master
         self.pack(fill=BOTH, expand=True)
         self.create_widgets()
+        self.kick_bots = []
 
     def create_widgets(self):
         # Create a frame for the header
@@ -67,14 +68,29 @@ class App(Frame):
         start_button = Button(content_frame, text="Start Bot", font=("Segoe UI", 10), fg="#FFFFFF", bg="#43B581", activebackground="#43B581", borderwidth=0, command=self.start_bot)
         start_button.grid(row=4, column=0, pady=10)
 
+        # Add a stop button
+        stop_button = Button(content_frame, text="Stop Bot", font=("Segoe UI", 10), fg="#FFFFFF", bg="#F04747", activebackground="#F04747", borderwidth=0, command=self.stop_bot)
+        stop_button.grid(row=5, column=0, pady=10)
+
     def start_bot(self):
         url = self.url_input.get().strip()
         num_tabs = int(self.tabs_input.get().strip())
 
-        for i in range(num_tabs):
-            kickBot = KickBot(url)
-            t = Thread(target=kickBot.doTest)
-            t.start()
+        for i in range(0, num_tabs, 4):
+            tabs_to_open = min(4, num_tabs-i)
+            for j in range(tabs_to_open):
+                kickBot = KickBot(url)
+                t = Thread(target=kickBot.doTest)
+                t.start()
+                self.kick_bots.append(kickBot)
+            sleep(10)
+
+    def stop_bot(self):
+        for kickBot in self.kick_bots:
+            kickBot.stop()
+        for widget in self.winfo_children():
+            widget.destroy()
+        self.master.destroy()
 
 root = Tk()
 root.title("Kick View Bot")

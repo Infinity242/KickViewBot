@@ -24,7 +24,14 @@ class KickBot():
                 button.click()
                 print("Button clicked!")
             except NoSuchElementException:
-                print("Watch now button not found on this page")
+                if "Checking if the site connection is secure" in self.driver.page_source:
+                    self.driver.close()
+                    sleep(5)
+                    self.setupWebBrowser()
+                    self.driver.get(self.url)
+                    print("Browser restarted")
+                else:
+                    print("Watch now button not found on this page")
             sleep(10)
 
 class App(Frame):

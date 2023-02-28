@@ -16,6 +16,7 @@ class KickBot():
     def doTest(self):
         self.setupWebBrowser()
         self.driver.get(self.url)
+        not_found_count = 0
         while True:
             try:
                 # Locate the button by its text
@@ -23,7 +24,11 @@ class KickBot():
                 # Click the button
                 button.click()
                 print("Button clicked!")
+                not_found_count = 0
             except NoSuchElementException:
+                if not_found_count >= 10:
+                    print("Watch now button not found after 10 attempts. Stopping search.")
+                    break
                 if "Checking if the site connection is secure" in self.driver.page_source:
                     self.driver.close()
                     sleep(5)
@@ -32,6 +37,7 @@ class KickBot():
                     print("Browser restarted")
                 else:
                     print("Watch now button not found on this page")
+                not_found_count += 1
             sleep(10)
 
 class App(Frame):

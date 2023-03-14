@@ -2,8 +2,10 @@ from tkinter import *
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.chrome.options import Options
 from threading import Thread
 from time import sleep
+from multiprocessing import Process
 
 class KickBot():
     def __init__(self, url):
@@ -11,7 +13,11 @@ class KickBot():
         self.driver = None
 
     def setupWebBrowser(self):
-        self.driver = Chrome()
+        chrome_options = Options()
+        chrome_options.add_argument("--start-minimized")
+        chrome_options.add_argument("--mute-audio")
+        chrome_options.add_argument("--headless")
+        self.driver = Chrome(options=chrome_options)
 
     def doTest(self):
         self.setupWebBrowser()
@@ -26,10 +32,15 @@ class KickBot():
                 print("Button clicked!")
                 not_found_count = 0
             except NoSuchElementException:
-                if not_found_count >= 10:
+                # Refresh page if "Oops, Something went wrong" message is on the screen
+                if "Oops, Something went wrong" in self.driver.page_source:
+                    self.driver.refresh()
+                    print("Page refreshed!")
+                    not_found_count = 0
+                elif not_found_count >= 10:
                     print("Watch now button not found after 10 attempts. Stopping search.")
                     break
-                if "Checking if the site connection is secure" in self.driver.page_source:
+                elif "Checking if the site connection is secure" in self.driver.page_source:
                     self.driver.close()
                     sleep(5)
                     self.setupWebBrowser()
@@ -39,6 +50,21 @@ class KickBot():
                     print("Watch now button not found on this page")
                 not_found_count += 1
             sleep(10)
+
+def run_script(url, num_threads):
+    processes = []
+    for i in range(num_threads):
+        bot = KickBot(url)
+        process = Process(target=bot.doTest)
+        process.start()
+        processes.append(process)
+    for process in processes:
+        process.join()
+
+if __name__ == '__main__':
+    url = 'https://example.com'
+    num_threads = int(input('Enter the number of threads to use: '))
+    run_script(url, num_threads)
 
 class App(Frame):
     def __init__(self, master=None):

@@ -5,16 +5,6 @@ Hello, my name is AnonX, I created a simple view bot for the new streaming site 
 
 This tool is to only be used for preventing view botting on your own website, via testing using this tool. I do not condone using this on kick.com or any other streaming platform.
 
-# Instructions
-1: Download the script
-2: Open the file location in a command prompt
-3: 
-
-# Discord
-If you need any help or if you would just like to be up to date on future updates for this tool, please join the Discord server.
-
-Link: https://discord.gg/8PV8k4QFHB
-
 ## Installation
 
 Install using these commands
@@ -25,6 +15,11 @@ Install using these commands
   python KickViewBot.py
 
 ```
+
+# Discord
+If you need any help or if you would just like to be up to date on future updates for this tool, please join the Discord server.
+
+Link: https://discord.gg/8PV8k4QFHB
 
 ## Features
 

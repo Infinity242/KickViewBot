@@ -1,10 +1,10 @@
-from undetected_chromedriver import Chrome, ChromeOptions
+from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.chrome.options import Options
 from threading import Thread
 from time import sleep
 from multiprocessing import Process
-import requests
 
 class KickBot():
     def __init__(self, url):
@@ -12,25 +12,16 @@ class KickBot():
         self.driver = None
 
     def setupWebBrowser(self):
-        chrome_options = ChromeOptions()
+        chrome_options = Options()
         chrome_options.add_argument("--start-minimized")
         chrome_options.add_argument("--mute-audio")
-        chrome_options.add_argument("--headless")
-        chrome_options.add_argument("--disable-dev-shm-usage")
-        chrome_options.add_argument("--no-sandbox")
+        #chrome_options.add_argument("--headless")
         self.driver = Chrome(options=chrome_options)
-
-    def getToken(self):
-        referer = self.driver.current_url
-        response = requests.get(referer)
-        csrf_token = response.headers.get('X-CSRFToken')
-        return csrf_token
 
     def doTest(self):
         self.setupWebBrowser()
         self.driver.get(self.url)
         not_found_count = 0
-        csrf_token = self.getToken()
         while True:
             try:
                 # Locate the button by its text
@@ -54,7 +45,6 @@ class KickBot():
                     self.setupWebBrowser()
                     self.driver.get(self.url)
                     print("Browser restarted")
-                    csrf_token = self.getToken()
                 else:
                     print("Watch now button not found on this page")
                 not_found_count += 1
@@ -80,6 +70,8 @@ def run_script(url, num_threads):
         process.join()
 
 if __name__ == '__main__':
+    print("This tool was created by AnonX#8622")
+    input("Press Enter to say thanks...")
     url = input("Enter the website URL: ")
     num_threads = int(input('Enter the number of threads to use: '))
     run_script(url, num_threads)

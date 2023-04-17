@@ -16,7 +16,7 @@ class KickBot():
         chrome_options = Options()
         chrome_options.add_argument("--start-minimized")
         chrome_options.add_argument("--mute-audio")
-        chrome_options.add_argument("--headless")
+        #chrome_options.add_argument("--headless")
         self.driver = Chrome(options=chrome_options)
 
     def doTest(self):
@@ -110,6 +110,10 @@ class App(Frame):
         # Add a stop button
         stop_button = Button(content_frame, text="Stop Bot", font=("Segoe UI", 10), fg="#FFFFFF", bg="#F04747", activebackground="#F04747", borderwidth=0, command=self.stop_bot)
         stop_button.grid(row=5, column=0, pady=10)
+
+        # Add a label for the credits
+        credits_label = Label(self, text="Made By: AnonX", font=("Segoe UI", 10), fg="#FFFFFF", bg="#1E1E1E")
+        credits_label.pack(side=BOTTOM, padx=10, pady=10, anchor=SE)
 
     def start_bot(self):
         url = self.url_input.get().strip()

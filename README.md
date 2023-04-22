@@ -16,7 +16,7 @@ Install using these commands
 
 ```
 
-# Discord & Guilded
+## Discord & Guilded
 If you need any help or if you would just like to be up to date on future updates for this tool, please join the Discord server. I also added a guilded server just in case the Discord server gets banned (Guilded is a Discord alternative with less rules).
 
 -Discord Link: https://discord.gg/8PV8k4QFHB

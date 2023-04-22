@@ -24,14 +24,14 @@ class KickBot():
         not_found_count = 0
         while True:
             try:
-                # Locate the button by its text
+
                 button = self.driver.find_element(By.XPATH, "//button[contains(text(), 'Start watching')]")
-                # Click the button
+
                 button.click()
                 print("Button clicked!")
                 not_found_count = 0
             except NoSuchElementException:
-                # Refresh page if "Oops, Something went wrong" message is on the screen
+
                 if "Oops, Something went wrong" in self.driver.page_source:
                     self.driver.refresh()
                     print("Page refreshed!")
@@ -50,7 +50,7 @@ class KickBot():
                 not_found_count += 1
             sleep(10)
 
-        # Keep the browser window open after the program has finished searching for the button
+
         while True:
             pass
 
@@ -65,7 +65,7 @@ def run_script(url, num_threads):
         num_windows += 1
         if num_windows == 4:
             num_windows = 0
-            sleep(6) # Wait for 6 seconds before starting another set of 4 windows
+            sleep(6) 
     for process in processes:
         process.join()
 

@@ -31,5 +31,5 @@ Link: https://discord.gg/8PV8k4QFHB
 - Headless version coming soon!
 
 # The Future Of The Tool
-I will be actively updating the tool to add new features and fix bugs or other issues that may come up with the script.
+I have plans to make a paid version of the tool with improved functionality, better UI and better performance. I will also be actively updating the free tool to add new features and fix bugs or other issues that may come up with the script.
     

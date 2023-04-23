@@ -1,7 +1,7 @@
 
 # Kick View Bot
 
-Hello, my name is AnonX, I created a simple view bot for the new streaming site called kick.com, I have been working on this for quite some time now to ensure that it had little to no issues upon it's public release.
+Hello, my name is AnonX. I created a simple view bot for the new streaming site called kick.com, I have been working on this for quite some time now to ensure that it had little to no issues upon it's public release.
 
 This tool is to only be used for preventing view botting on your own website, via testing using this tool. I do not condone using this on kick.com or any other streaming platform.
 

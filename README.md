@@ -29,7 +29,9 @@ If you need any help or if you would just like to be up to date on future update
 - No viewer drop-offs
 - Simple UI
 - Easy to use
-- Headless version coming soon!
+- Headless version!
+- New UI Coming Soon!
+- Paid Version Coming soon!
 
 # The Future Of The Tool
 I have plans to make a paid version of the tool with improved functionality, better UI and better performance. I will also be actively updating the free tool to add new features and fix bugs or other issues that may come up with the script.

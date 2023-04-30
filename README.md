@@ -10,7 +10,7 @@ This tool is to only be used for preventing view botting on your own website, vi
 Install using these commands
 
 ```bash
-  pip install tkinter
+  pip install tk
   pip install selenium
   python KickViewBot.py
 

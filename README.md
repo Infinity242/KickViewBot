@@ -20,6 +20,8 @@ This tool is to only be used for preventing view botting on your own website, vi
 
 ```
 
+Need more help? Here's a video! https://www.youtube.com/watch?v=asG2wI9VA4k
+
 ## Discord & Guilded
 If you need any help or if you would just like to be up to date on future updates for this tool, please join the Discord server. I also added a guilded server just in case the Discord server gets banned (Guilded is a Discord alternative with less rules).
 

@@ -7,7 +7,11 @@ This tool is to only be used for preventing view botting on your own website, vi
 
 ## Installation
 
-Install using these commands
+1: Download Python 3.10 from the Microsoft store
+
+2: Open a command prompt in the folder with the python files
+
+3: Install using these commands
 
 ```bash
   pip install tk

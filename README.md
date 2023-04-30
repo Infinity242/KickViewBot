@@ -30,6 +30,7 @@ If you need any help or if you would just like to be up to date on future update
 
 ## Features
 
+- Auto age confirmation
 - Multi-Threading
 - Low CPU Usage
 - No viewer drop-offs

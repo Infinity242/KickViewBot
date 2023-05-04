@@ -25,7 +25,7 @@ class KickBot():
         while True:
             try:
                 
-                button = self.driver.find_element(By.XPATH, "//button[contains(text(), 'Start watching')]")
+                button = self.driver.find_element(By.CSS_SELECTOR, "button.variant-action.size-sm")
                 
                 button.click()
                 print("Button clicked!")

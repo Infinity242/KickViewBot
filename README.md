@@ -26,7 +26,8 @@ Need more help? Here's a video! https://www.youtube.com/watch?v=asG2wI9VA4k
 If you need any help or if you would just like to be up to date on future updates for this tool, please join the Discord server. I also added a guilded server just in case the Discord server gets banned (Guilded is a Discord alternative with less rules).
 
 - Discord Link: https://discord.gg/8PV8k4QFHB
-- Guilded Link: https://www.guilded.gg/i/2VVeW832
+- Create a Guilded Account here: https://www.guilded.gg?r=4DQZMKMd
+- Guilded Server Invite (Click after you've created an account): https://www.guilded.gg/i/2VVeW832
 
 ## Features
 

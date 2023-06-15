@@ -2,6 +2,7 @@ from undetected_chromedriver import ChromeOptions
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from threading import Thread
+import undetected_chromedriver as uc
 from time import sleep
 from multiprocessing import Process
 from selenium.webdriver import Firefox, FirefoxOptions
@@ -13,13 +14,13 @@ class KickBot():
         self.driver = None
 
     def setupWebBrowser(self):
-        firefox_options = FirefoxOptions()
-        firefox_options.add_argument("--headless")
-        firefox_options.add_argument("--mute-audio")
-        firefox_options.add_argument("--no-sandbox")
-        firefox_options.add_argument("--disable-dev-shm-usage")
-        firefox_options.add_argument("--disable-gpu")
-        self.driver = Firefox(options=firefox_options)
+        chrome_options = Options()
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--mute-audio")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--disable-gpu")
+        self.driver = uc.Chrome(options=chrome_options)
 
     def getToken(self):
         referer = self.driver.current_url

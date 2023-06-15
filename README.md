@@ -16,6 +16,7 @@ This tool is to only be used for preventing view botting on your own website, vi
 ```bash
   pip install tk
   pip install selenium
+  pip install undetected_chromedriver
   python KickViewBot.py
 
 ```

@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from threading import Thread
+import undetected_chromedriver as uc
 from time import sleep
 from multiprocessing import Process
 
@@ -16,7 +17,7 @@ class KickBot():
         chrome_options.add_argument("--start-minimized")
         chrome_options.add_argument("--mute-audio")
         #chrome_options.add_argument("--headless")
-        self.driver = Chrome(options=chrome_options)
+        self.driver = uc.Chrome(options=chrome_options)
 
     def doTest(self):
         self.setupWebBrowser()

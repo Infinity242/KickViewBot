@@ -1,3 +1,23 @@
+# NEW UPDATE!
+In the past month we have made some serious progress in terms of the programs ability and very low resource usage. We have converted the new program to be paid, our pricing is really reasonable & we have a large variety of payment options.
+
+## New Features
+
+- Improved UI
+- Improved view botting (Up to 1,500)
+- Premium Support
+- Weekly Updates
+- Proxy Support
+- Anti-Finger Printing
+- Anti-Bot Detection
+
+
+## Showcase
+
+![App Screenshot](https://kvb.gg/wp-content/uploads/2023/07/Kick.com_bot_v1_3m5GPjPPef.gif)
+
+
+
 
 # Kick View Bot
 

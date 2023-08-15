@@ -1,5 +1,7 @@
 # NEW UPDATE!
-In the past month we have made some serious progress in terms of the programs ability and very low resource usage. We have converted the new program to be paid, our pricing is really reasonable & we have a large variety of payment options.
+In the past month, we have made some serious progress in terms of the program's ability and very low resource usage. We have converted the new program to be paid, our pricing is really reasonable & we have a large variety of payment options.
+
+Discord: https://discord.gg/BYen4qweKG
 
 ## New Features
 
@@ -29,7 +31,7 @@ This tool is to only be used for preventing view botting on your own website, vi
 
 1: Download Python 3.10 from the Microsoft store
 
-2: Open a command prompt in the folder with the python files
+2: Open a command prompt in the folder with the Python files
 
 3: Install using these commands
 

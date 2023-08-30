@@ -1,7 +1,7 @@
 # NEW UPDATE!
 In the past month, we have made some serious progress in terms of the program's ability and very low resource usage. We have converted the new program to be paid, our pricing is really reasonable & we have a large variety of payment options.
 
-Website: https://kvb.gg
+Website: https://kvb.gg <br>
 Discord: https://discord.gg/BYen4qweKG
 
 ## New Features

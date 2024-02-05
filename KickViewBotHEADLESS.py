@@ -1,4 +1,3 @@
-from undetected_chromedriver import ChromeOptions
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from threading import Thread
@@ -20,7 +19,7 @@ class KickBot():
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--disable-gpu")
-        self.driver = uc.Chrome(options=chrome_options)
+        self.driver = uc.Chrome(version_main=108, options=chrome_options)
 
     def getToken(self):
         referer = self.driver.current_url

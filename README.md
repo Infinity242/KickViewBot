@@ -23,7 +23,7 @@ Discord: https://discord.gg/kvb
 
 ## Preview
 
-![App Screenshot](https://imgur.com/a/98gd1yw.png)
+![App Screenshot] https://imgur.com/mqsQKmr.png
 
 
 

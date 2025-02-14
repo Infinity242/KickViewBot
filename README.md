@@ -1,5 +1,5 @@
 # NEW UPDATE!
-In the past month, we have made some serious progress in terms of the program's ability and very low resource usage. We have converted the new program to be paid, our pricing is really reasonable & we have a large variety of payment options.
+Hello everyone, it seems so crazy that I have been working on this project for two years! Since its release, we have made huge improvements. It is now fully server-sided & offers a lot more than just Viewbotting!
 
 Website: https://kvb.gg <br>
 Discord: https://discord.gg/kvb
@@ -7,7 +7,13 @@ Discord: https://discord.gg/kvb
 ## New Features
 
 - Improved UI
-- Improved view botting (Up to 1,500)
+- Improved view botting (Up to 20,000+ Viewers)
+- Chatbot
+- Pollbot
+- Clip Viewbot
+- Ai Chatbot (Coming Soon!)
+- Followbot
+- Auto Start (The bots automatically send when you go live!)
 - Premium Support
 - Weekly Updates
 - Proxy Support
@@ -15,9 +21,9 @@ Discord: https://discord.gg/kvb
 - Anti-Bot Detection
 
 
-## Showcase
+## Preview
 
-![App Screenshot](https://kvb.gg/wp-content/uploads/2023/07/Kick.com_bot_v1_3m5GPjPPef.gif)
+![App Screenshot](https://imgur.com/a/98gd1yw.png)
 
 
 

@@ -1,5 +1,5 @@
 # NEW UPDATE!
-Hello everyone, it seems so crazy that I have been working on this project for two years! Since its release, we have made huge improvements. It is now fully server-sided & offers a lot more than just Viewbotting!
+Hello everyone, it seems so crazy that I have been working on this project for two years! Since its release, we have made huge improvements. It is now fully server-sided & we offer Viewbotting, Followbots, Ai Chatbots, Normal Chatbots, Pollbots, Clip Viewbots & More! Everything is VERY cheap and can either be bought through one of our plans or bought individually!
 
 Website: https://kvb.gg <br>
 Discord: https://discord.gg/kvb
